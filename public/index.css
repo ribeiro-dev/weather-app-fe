@@ -20,24 +20,61 @@ body {
 }
 
 .card {
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
 
    min-width: 380px;
    border-radius: 10px;
    padding: 20px;
    background-color: white;
 
+   box-shadow: 0px 0px 30px rgba(1, 1, 1, .5);
 }
 
+/* CARD TOP */
 .card .card-top {
    display: flex;
-   gap: 10px;
+   gap: 8px;
 
-   height: 50px;
+   height: 46px;
 }
 
 .card .card-top input {
-   flex-basis: 80%;
+   background-image: url(images/icons/magnifying-glass-solid.svg);
+   background-repeat: no-repeat;
+   background-position: 10px center;
+   background-size: 24px;
+
+   padding-left: 40px;
+   flex: 1;
 
    border: 1px solid rgb(185, 185, 185);
    border-radius: 4px;
+}
+
+.card .card-top button {
+   background: none;
+   border: 1px solid rgb(185, 185, 185);
+   border-radius: 4px;
+
+   cursor: pointer;
+   transition: all .3s ease;
+
+   width: 50px;
+}
+
+.card .card-top button:hover {
+   background-color: rgb(235, 235, 235);
+}
+
+.card .card-top button img {
+   width: 28px;
+   height: 100%;
+}
+
+
+/* CARD BODY */
+.card .card-body {
+   text-align: center;
 }
