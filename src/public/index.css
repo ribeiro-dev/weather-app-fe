@@ -1,0 +1,43 @@
+* {
+   padding: 0;
+   margin: 0;
+}
+
+html, body {
+   height: 100%;
+}
+
+body {
+   background: linear-gradient(360deg, rgba(77,56,209,1) 0%, rgba(123,76,244,1) 100%);
+}
+
+.container {
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.card {
+
+   min-width: 380px;
+   border-radius: 10px;
+   padding: 20px;
+   background-color: white;
+
+}
+
+.card .card-top {
+   display: flex;
+   gap: 10px;
+
+   height: 50px;
+}
+
+.card .card-top input {
+   flex-basis: 80%;
+
+   border: 1px solid rgb(185, 185, 185);
+   border-radius: 4px;
+}
