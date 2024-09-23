@@ -9,6 +9,7 @@ html, body {
 
 body {
    background: linear-gradient(360deg, rgba(77,56,209,1) 0%, rgba(123,76,244,1) 100%);
+   font-family: "Poppins", sans-serif;
 }
 
 .container {
@@ -46,6 +47,7 @@ body {
    background-position: 10px center;
    background-size: 24px;
 
+   font-size: 16px;
    padding-left: 40px;
    flex: 1;
 
@@ -77,4 +79,34 @@ body {
 /* CARD BODY */
 .card .card-body {
    text-align: center;
+}
+
+.card .card-body .weather-info {
+   display: flex;
+   flex-direction: column;
+   gap: 14px;
+
+   font-size: 50px;
+}
+
+.card .card-body .weather-info img {
+   width: 120px;
+   height: 120px;
+   margin: auto;
+}
+
+.card .card-body .weather-info #weather {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+
+}
+
+
+.card .card-body .weather-info #weather sup {
+   font-size: .5em;
+}
+
+.card .card-body .weather-info #description {
+   font-size: .45em;
 }
